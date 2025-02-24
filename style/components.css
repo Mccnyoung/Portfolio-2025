@@ -1,0 +1,102 @@
+/* Card Components */
+.intro-card {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 400px;
+    padding: calc(var(--spacing-unit) * 2);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-unit);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Work Item Components */
+.work-image {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.work-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.work-content {
+    flex: 1;
+    margin: 0 var(--spacing-unit);
+}
+
+.work-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.work-meta {
+    text-align: right;
+    color: #666;
+}
+
+.work-meta span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* Tag Components */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0;
+}
+
+.tags button, .tags span {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* User Info */
+.user-info {
+    margin: 0;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Work Items */
+.works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+} 

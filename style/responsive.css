@@ -1,0 +1,84 @@
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .intro-section {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .content-section {
+        padding: clamp(1.5rem, 3vw, 2rem);
+        height: auto;
+    }
+}
+
+/* Small Tablet Breakpoint */
+@media (max-width: 768px) {
+    .content-section {
+        gap: 2rem;
+    }
+
+    .works-list {
+        gap: var(--spacing-unit);
+    }
+
+    .work-item {
+        background: var(--card-bg);
+        padding: var(--spacing-unit);
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .work-image.mobile-only {
+        display: block;
+    }
+
+    .work-meta {
+        text-align: left;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .work-meta span {
+        display: inline;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    .intro-section {
+        height: 30vh;
+        min-height: 300px;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .content-section {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .nav ul {
+        gap: 1rem;
+    }
+
+    .intro-card {
+        display: none;
+    }
+
+    .user-info {
+        text-align: center;
+        margin-bottom: var(--spacing-unit);
+    }
+
+    .social {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+} 

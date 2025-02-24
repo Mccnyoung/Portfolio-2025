@@ -1,0 +1,137 @@
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: min(40px, 5vh);
+        padding: 0 min(24px, 4vw);
+    }
+
+    .project-sidebar {
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-right: 0;
+    }
+
+    .project-content {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .project-navigation {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-section {
+        display: none !important;  /* 태블릿에서 강제로 숨김 */
+    }
+
+    .content-section {
+        padding: clamp(1rem, 2vw, 2rem);
+    }
+
+    .meta-grid {
+        gap: min(24px, 3vw);
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .project-content {
+        gap: 2rem;
+    }
+
+    .work-meta {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .meta-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .pain-points {
+        grid-template-columns: 1fr;
+    }
+
+    /* Diary Study 반응형 */
+    .study-phases {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .phase-card {
+        padding: 24px;
+    }
+
+    .phase-box .phase-title {
+        padding: 12px 20px;
+    }
+
+    /* Goal Cards 반응형 */
+    .goal-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .goal-card {
+        padding: 24px;
+    }
+
+    /* Phase Card with Image 반응형 */
+    .phase-card.with-image {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .phase-card .card-image {
+        width: 100%;
+    }
+
+    /* Insight & Info Box 반응형 */
+    .insight-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .problem-section .info-box,
+    .solution-section .info-box,
+    .insight-box {
+        padding: min(24px, 4vh) min(24px, 4vw);
+    }
+
+    /* Content Thumbnail 반응형 */
+    .content-thumbnail .card-box {
+        flex-direction: column;
+    }
+
+    /* Navigation 반응형 */
+    .project-navigation {
+        gap: 24px;
+    }
+
+    .phase-box {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .phase-item .phase-content {
+        gap: 16px;
+    }
+
+    .phase-thumbnail {
+        margin-top: 0;
+    }
+} 
