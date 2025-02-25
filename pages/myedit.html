@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-powered Nail Sizing App - MyEdit</title>
+    <link rel="icon" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+</head>
+<body>
+    <header class="header-full">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1nvh_sq21ZHMoQ7j83KEUpO5zluotbjaM/view?usp=sharing" target="_blank">resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="project-hero">
+        <img src="../assets/myedit-hero.png" alt="project thumbnail">
+    </div>
+    <div class="project-container">
+        <!-- Left Fixed Column -->
+        <aside class="project-sidebar">
+            <div class="project-info">
+                <img src="../assets/myedit-logo.svg" alt="myedit Icon" class="project-icon">
+                <h1>AI-powered Nail Sizing App</h1>
+                <p>Tutorial optimization increases accuracy by 96.6%</p>
+            </div>
+
+            <div class="project-navigation">
+                <a href="../index.html" class="back-link">Back</a>
+                <div class="nav-links">
+                    <a href="#problem">PROBLEM → SOLUTION</a>
+                    <a href="#first-iteration">1ST ITERATION</a>
+                    <a href="#UT">USABILITY TEST</a>
+                    <a href="#final-design">FINAL DESIGN</a>
+                    <a href="#impact">IMPACT</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Scrollable Content -->
+        <main class="project-content">
+            <section class="overview"">
+                <h3>PROJECT OVERVIEW</h3>
+                <div class="meta-grid">
+                    <div class="meta-section">
+                        <p class="small">ROLE</p>
+                        <p>Product Design lead</p>
+                        <p class="small-bodytext">Led end-to-end design from research and design to branding, motion design, iterative prototyping, and QA testing.</p>
+                    </div>
+                    <div class="meta-section">
+                        <div class="meta-section-item">
+                            <p class="small">PRODUCT</p>
+                            <p class="small-bodytext">iOS</p>
+                        </div>
+                        <div class="meta-section-item">
+                            <p class="small">TEAM</p>
+                            <p class="small-bodytext">1 Designer (Me)</p>
+                            <p class="small-bodytext">1 Project Manager</p>
+                            <p class="small-bodytext">1 UX Researcher</p>
+                            <p class="small-bodytext">Development Agency</p>
+                        </div>
+                    </div>
+                    <div class="meta-section">
+                        <div class="meta-section-item">
+                            <p class="small">TOOLS</p>
+                            <p class="small-bodytext">Sketch, Protopie, Zeplin</p>
+                        </div>
+                        <div class="meta-section-item">
+                            <p class="small">DURATION</p>
+                            <p class="small-bodytext">6 months</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="problem" class="problem-section">
+                <h3>PROBLEM</h3>
+                <div class="info-box">
+                    AI-powered nail sizing is unfamiliar to users, requiring clear guidance.<br>
+                    However, <span class="highlight-text">the existing text-based tutorial</span> failed to engage users, leading to low learning effectiveness and <span class="highlight-text">high measurement failure rates</span>.
+                </div>
+            </section>
+
+            <section class="solution-section">
+                <h3>SOLUTION</h3>
+                <div class="info-box">"Introducing a tutorial page with <span class="highlight-text">motion graphics</span> to provide intuitive guidance."</div>
+            </section>
+
+            <section class="insight-layout">
+                <h3 class="label">INSIGHT FROM UT</h3>
+                <h2 class="descr">Weak information delivery due to text-heavy tutorials</h2>
+                <!-- 이미지+텍스트 그리드 -->
+                <div class="insight-grid">
+                    <div class="insight-item">
+                        <img src="../assets/myedit-insight01.webp" alt="User validation">
+                        <p>User confused the tutorial page with the measurement page.</p>
+                    </div>
+                    <div class="insight-item">
+                        <img src="../assets/myedit-insight02.webp" alt="Thumb measurement">
+                        <p>User measured the thumb without placing it on the table.</p>
+                    </div>
+                </div>
+                <!-- 화살표 -->
+                <div class="arrow-down">
+                    <img src="../assets/arrow-down.svg" alt="Arrow pointing down">
+                </div>
+                <!-- Insight box -->
+                <div class="insight-box">
+                "Text-based tutorials fail to capture attention<br>and do not effectively convey the correct way to measure nails."
+                </div>
+            </section>
+        
+            <!-- first iteration -->
+            <section id="first-iteration" class="content-thumbnail">
+                <h3 class="label">FIRST ITERATION</h3>
+                <h2 class="descr">Tutorial with illustration for better visual clarity.</h2>
+                <div class="thumbnail-full">
+                    <img src="../assets/myedit-iteration.png" alt="First iteration">
+                </div>
+            </section>
+
+            <!-- 2차 UT -->
+            <section id="UT" class="insight-layout">
+                <h3 class="label">USABILITY TEST</h3>
+                <h2 class="descr">Conducted UT with 11 participants to assess the effectiveness of the tutorial page.</h2>
+                <!-- 이미지+텍스트 그리드 -->
+                <div class="insight-grid">
+                    <div class="insight-item">
+                        <img src="../assets/myedit-UT01.png" alt="SUS Score" class="insight-item-img border-stroke">
+                        <p><span class="highlight-text">System Usability Scale (SUS) score:</span>  Increased from 46.7 to 90.</p>
+                    </div>
+                    <div class="insight-item">
+                        <img src="../assets/myedit-UT02.png" alt="average duration on tutorial page" class="insight-item-img border-stroke">
+                        <p><span class="highlight-text"> However,</span> the average time spent on the tutorial page is less than 3 seconds.</p>
+                    </div>
+                </div>
+                <!-- 화살표 -->
+                <div class="arrow-down">
+                    <img src="../assets/arrow-down.svg" alt="Arrow pointing down">
+                </div>
+                <!-- Insight box -->
+                <div class="insight-box">
+                    "Static illustration failed to capture user attention"
+                </div>
+            </section>
+            
+            <!-- final design -->
+            <section id="final-design" class="FinalDesign-section">
+                <h3 class="label">FINAL DESIGN</h3>
+                <div class="title-img">
+                    <h2 class="title-text">1. Finger: Measure from the <span class="highlight-text">edge of the table.</span></h2>
+                    <img src="../assets/myedit-design01.gif" alt="Final finger tutorial page" class="border-stroke">
+                </div>
+                <div class="title-img">
+                    <h2 class="title-text">2. Thumb: Clearly show <span class="highlight-text">correct and incorrect way</span> to measure in sequence.</h2>
+                    <img src="../assets/myedit-design02.gif" alt="Final thumb tutorial page" class="border-stroke">
+                </div>
+            </section>
+            <!-- impact -->
+            <section id="impact" class="content-thumbnail">
+                <h3 class="label">IMPACT</h3>
+                <h2 class="descr">Meet 89 loyal customers through QA testing.</h2>
+                <div class="card-box">
+                    <div class="card-item">
+                        <img src="../assets/myedit-impact01.png" alt="sucess rate">
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/myedit-impact02.png" alt="Clarity of app directions">
+                    </div>
+                </div>
+            </section>
+            <section class="next-project">
+                <h3 class="label">NEXT PROJECT</h3>
+                <div class="next-thumbnail">
+                    <a href="../pages/spark.html">
+                        <img src="../assets/spark-link-image.png" alt="Spark project preview">
+                    </a>
+                </div>       
+            </section>
+        </main>
+    </div>
+    <script src="../script/main.js"></script>
+</body>
+</html>

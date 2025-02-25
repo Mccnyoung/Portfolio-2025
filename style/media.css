@@ -1,0 +1,244 @@
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        padding: 48px min(24px, 4vw);
+    }
+
+    .project-sidebar {
+        position: relative;
+        height: auto;
+        top: 0;
+        padding-right: 0;
+    }
+
+    .project-content,
+    .project-info {
+        width: 100%;
+        padding: 0 min(24px, 4vw);
+    }
+
+    .project-navigation {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-section {
+        display: none;
+    }
+
+    .content-section {
+        padding: clamp(1.5rem, 2vw, 2rem);
+        position: relative;
+    }
+
+    .meta-grid {
+        gap: min(24px, 3vw);
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        margin-bottom: 36px;
+    }
+    .project-info{
+        margin-bottom: 0px;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    .project-content {
+        gap: 2rem;
+    }
+
+    .work-item {
+        padding: 0;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .work-content h3{
+        margin-bottom: 0px;
+    }
+
+    .work-item a {
+        flex-direction: column;
+        gap: 2px;
+        align-items: flex-start;
+    }
+
+    .work-meta {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .work-meta span {
+        display: inline;
+    }
+
+    .work-meta .anchor-btn {
+        margin-left: auto;
+    }
+
+    .tags{
+        display: none;
+    }
+
+    .phase-box,
+    .study-phases,
+    .goal-cards,
+    .insight-grid,
+    .meta-grid,
+    .pain-points {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .content-thumbnail .card-box {
+        flex-direction: column;
+    }
+
+    .project-navigation {
+        gap: 24px;
+    }
+
+    .phase-item .phase-content {
+        gap: 16px;
+    }
+
+    .phase-thumbnail {
+        margin-top: 0;
+    }
+
+    .phase-card,
+    .goal-card,
+    .problem-section .info-box,
+    .solution-section .info-box,
+    .insight-box {
+        padding: min(24px, 4vh) min(24px, 4vw);
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        padding: 36px min(24px, 4vw);
+    }
+
+
+    .project-content,
+    .project-info {
+        padding: 0 min(24px, 4vw);
+        overflow: visible;
+    }
+
+    .work-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    .mobile-thumbnail {
+        display: flex;
+        width: 100%;
+        height: 360px;
+        background-color: var(--gray01);
+        margin-bottom: 16px;
+        border-radius: 12px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .mobile-thumbnail img {
+        width: 45%;
+        height: 70%;
+        object-fit: contain;
+    }
+
+    .mobile-thumbnail img.mobile-wide {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+
+    .work-item:hover {
+        background-color: transparent;
+        cursor: default;
+    }
+
+    .work-item:hover .tags span {
+        background: var(--gray00);
+        color: var(--gray03);
+    }
+
+    .work-item:hover .work-meta span {
+        display: inline;
+    }
+
+    .work-item:hover .anchor-btn {
+        display: none;
+    }
+
+    .anchor-btn {
+        display: block;
+    }
+
+    .works-list{
+        gap: 3rem;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 28px min(24px, 4vw);
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 100;
+    }
+
+    .content-section {
+        padding: min(24px, 4vw);
+        padding-top: calc(28px + 28px + 36px);
+    }
+
+    .user-info {
+        margin-top: 0;
+    }
+
+    .project-content section{
+        margin-bottom: 72px;
+    }
+
+    .descr {
+        font-size: var(--font-base);
+        font-weight: 300;
+        margin-bottom: 12px;
+    }
+
+    .FinalDesign-section .title-img .title-text{
+        font-size: var(--font-base);
+    }
+
+    .solution-section .info-box, .problem-section .info-box, .insight-box{
+        font-size: var(--font-sm);
+    }
+
+    br {
+    display: none;
+    }
+
+    .phase-item .phase-title{
+        font-size: var(--font-sm);
+    }
+} 
